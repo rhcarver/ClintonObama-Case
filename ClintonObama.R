@@ -102,8 +102,7 @@ plot(as.party(election_reg_tree), type="extended")
 # Simpler tree to demonstrate concept
 
 tree2 <- ctree(Obama_margin_percent~ Black + HighSchool, 
-               data=election_data_smaller_train,
-               controls=ctree_control(maxdepth = 2))
+               data=election_data_smaller_train)
 plot(tree2,main="Regression Tree for Obama Margin %", 
      gp=gpar(fontsize=4),
      inner_panel=node_inner,
