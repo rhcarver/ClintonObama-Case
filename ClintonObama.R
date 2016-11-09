@@ -94,7 +94,7 @@ plot(election_reg_tree)
 text(election_reg_tree, use.n=TRUE, cex=0.5, offset=.5)
 
 # Ok, this tree looks good but we have a way to make it look more beautiful. We use packages names named partykit and party to do that. Let's try it.
-install.packages("partykit")
+#  install.packages("partykit")  # we have this package already.
 library(partykit)
 library(party)
 
